@@ -1,0 +1,1 @@
+ @if(old('id_jurusan') == $jurusan->id) selected @endif
