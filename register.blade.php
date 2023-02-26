@@ -227,14 +227,11 @@
     <!-- iCheck -->
     <script src="{{ asset('/AdminLTE-2/plugins/iCheck/icheck.min.js') }}"></script>
     <script>
-        $(function() {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-blue',
-                radioClass: 'iradio_square-blue',
-                increaseArea: '20%' /* optional */
-            });
-        });
-    </script>
+    $('#foto').on('change', function(){
+        var fileName = $(this).val();
+        $(this).next('.custom-file-label').html(fileName);
+    });
+</script>
 </body>
 
 </html>
